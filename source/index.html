@@ -1,12 +1,62 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Мишка</title>
-  </head>
-  <body>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Мишка</title>
+</head>
 
-  </body>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="header__wrap wrap">
+        <nav class="header__nav-menu nav-menu">
+          <button class="nav-menu__button">
+            <span class="visually-hidden">Открыть</span>
+          </button>
+          <ul class="nav-menu__list site-list">
+            <li class="site-list__item site-list__item--logo">
+              <a class="site-list__link site-list__link--logo">
+                <img width="86" height="36" src="http://via.placeholder.com/86x36" alt="логотип магазина Мишка">
+              </a>
+            </li>
+            <ul class="site-list__item site-list__item--range range">
+              <li class="range__item range__item--catalog">
+                <a href="catalog.html">Каталог товаров</a>
+              </li>
+              <li class="range__item range__item--hand">
+                <a href="form.html">Вязание на заказ</a>
+              </li>
+            </ul>
+            <ul class="site-list__item site-list__item--urer user">
+              <li class="user__item user__item--search">
+                <a href="#">
+                  <img class="user__image" width="18" height="18" src="http://via.placeholder.com/18x18" alt="поиск">Поиск
+                </a>
+              </li>
+              <li class="user__item user__item--card">
+                <a href="#">
+                  <img class="user__image" width="20" height="20" alt="Корзина" src="http://via.placeholder.com/20x20">
+                  Корзина: пока пуста
+                </a>
+              </li>
+            </ul>
+            <ul class="site-list__item site-list__item--promotion promotion">
+              <li class="promotion__item promotion__item--works">
+                <a href="#">Новые поступления</a>
+              </li>
+              <li class="promotion__item promotion__item--sale">
+                <a href="#">Распродажа</a>
+              </li>
+            </ul>
+            <li class="site-list__item site-list__item--delivery">
+              <a href="#">Бесплатная доставка по России</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+</body>
+
 </html>
