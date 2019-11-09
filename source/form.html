@@ -48,68 +48,69 @@
   </header>
 
   <section class="order">
+    <h1 class="order__title">Вязание на заказ</h1>
     <p class="order-description wrap">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
     <form class="order-form form" action="https://echo.htmlacademy.ru" method="post">
       <fieldset class="form__fieldset">
+        <legend class="form__legend">тип</legend>
         <div class="form__fieldset-wrap wrap">
-          <legend class="form__legend">тип</legend>
           <ul class="form__list form__list--radio">
             <li class="form__item form__item--radio">
               <input class="visually-hidden form__input form__input--radio" type="radio" name="type" value="accessory" id="filter-accessory" checked>
-              <label class="forma__label forma__label--radio" for="filter-accessory">Аксессуар для интерьера</label>
+              <label class="form__label form__label--radio" for="filter-accessory">Аксессуар для интерьера</label>
             </li>
             <li class="form__item form__item--radio">
               <input class="visually-hidden form__input form__input--radio" type="radio" name="type" value="plaything" id="filter-plaything">
-              <label class="forma__label forma__label--radio" for="filter-plaything">Детская игрушка</label>
+              <label class="form__label form__label--radio" for="filter-plaything">Детская игрушка</label>
             </li>
           </ul>
         </div>
       </fieldset>
       <fieldset class="form__fieldset form__fieldset--gray">
+        <legend class="form__legend">цвет</legend>
         <div class="form__fieldset-wrap wrap">
-          <legend class="form__legend">цвет</legend>
           <ul class="form__list form__list--checkbox">
             <li class="form__item form__item--checkbox">
               <input class="visually-hidden form__input form__input--checkbox" type="checkbox" name="color" value="white" id="filter-white" checked>
-              <label class="forma__label forma__label--checkbox" for="filter-white">Белый</label>
+              <label class="form__label form__label--checkbox" for="filter-white">Белый</label>
             </li>
             <li class="form__item form__item--checkbox">
               <input class="visually-hidden form__input form__input--checkbox" type="checkbox" name="color" value="grey" id="filter-grey" checked>
-              <label class="forma__label forma__label--checkbox" for="filter-grey">Серый</label>
+              <label class="form__label form__label--checkbox" for="filter-grey">Серый</label>
             </li>
             <li class="form__item form__item--checkbox">
               <input class="visually-hidden form__input form__input--checkbox" type="checkbox" name="color" value="tiffany" id="filter-tiffany">
-              <label class="forma__label forma__label--checkbox" for="filter-tiffany">Тиффани</label>
+              <label class="form__label form__label--checkbox" for="filter-tiffany">Тиффани</label>
             </li>
             <li class="form__item form__item--checkbox">
               <input class="visually-hidden form__input form__input--checkbox" type="checkbox" name="color" value="black" id="filter-black">
-              <label class="forma__label forma__label--checkbox" for="filter-black">Черный</label>
+              <label class="form__label form__label--checkbox" for="filter-black">Черный</label>
             </li>
             <li class="form__item form__item--checkbox">
               <input class="visually-hidden form__input form__input--checkbox" type="checkbox" name="color" value="pink" id="filter-pink">
-              <label class="forma__label forma__label--checkbox" for="filter-pink">Розовый</label>
+              <label class="form__label form__label--checkbox" for="filter-pink">Розовый</label>
             </li>
             <li class="form__item form__item--checkbox">
               <input class="visually-hidden form__input form__input--checkbox" type="checkbox" name="color" value="orange" id="filter-orange">
-              <label class="forma__label forma__label--checkbox" for="filter-orange">Оранжевый</label>
+              <label class="form__label form__label--checkbox" for="filter-orange">Оранжевый</label>
             </li>
           </ul>
         </div>
       </fieldset>
       <fieldset class="form__fieldset">
+        <legend class="form__legend form__legend--name">фио</legend>
         <div class="form__fieldset-wrap wrap">
-          <legend class="form__legend form__legend--name">фио</legend>
           <ul class="form__list form__list--text">
             <li class="form__item form__item--text">
-              <label class="forma__label forma__label--text" for="firstname">Имя:</label>
+              <label class="form__label form__label--text" for="firstname">Имя:</label>
               <input class="form__input form__input--text" type="text" name="firstname" id="firstname" placeholder="Введите ваше имя*">
             </li>
             <li class="form__item form__item--text">
-              <label class="forma__label forma__label--text" for="lastname">Фамилия:</label>
+              <label class="form__label form__label--text" for="lastname">Фамилия:</label>
               <input class="form__input form__input--text" type="text" name="lastname" id="lastname" placeholder="Введите вашу фамилию*">
             </li>
             <li class="form__item form__item--text">
-              <label class="forma__label forma__label--text" for="middlename">Отчество:</label>
+              <label class="form__label form__label--text" for="middlename">Отчество:</label>
               <input class="form__input form__input--text" type="text" name="middlename" id="middlename" placeholder="Введите ваше отчество*">
             </li>
           </ul>
@@ -127,6 +128,18 @@
           </li>
         </ul>
       </fieldset>
+      <fieldset class="form__fieldset">
+        <legend class="form__legend form__legend--textarea">доп</legend>
+        <div class="form__fieldset-wrap wrap">
+          <div class="form__textaria">
+            <textarea class="form__input-textaria" name="message" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+          </div>
+        </div>
+      </fieldset>
+      <div class="form__wrap-content wrap">
+        <p class="form__note">*Поля обязательны для заполнения</p>
+        <button class="button form__button">отправить заказ</button>
+      </div>
     </form>
   </section>
 
