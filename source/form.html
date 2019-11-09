@@ -52,7 +52,7 @@
     <form class="order-form form" action="https://echo.htmlacademy.ru" method="post">
       <fieldset class="form__fieldset">
         <div class="form__fieldset-wrap wrap">
-          <legend class="orm__legend">тип</legend>
+          <legend class="form__legend">тип</legend>
           <ul class="form__list form__list--radio">
             <li class="form__item form__item--radio">
               <input class="visually-hidden form__input form__input--radio" type="radio" name="type" value="accessory" id="filter-accessory" checked>
@@ -61,6 +61,37 @@
             <li class="form__item form__item--radio">
               <input class="visually-hidden form__input form__input--radio" type="radio" name="type" value="plaything" id="filter-plaything">
               <label class="forma__label forma__label--radio" for="filter-plaything">Детская игрушка</label>
+            </li>
+          </ul>
+        </div>
+      </fieldset>
+      <fieldset class="form__fieldset form__fieldset--gray">
+        <div class="form__fieldset-wrap wrap">
+          <legend class="form__legend">цвет</legend>
+          <ul class="form__list form__list--checkbox">
+            <li class="form__item form__item--checkbox">
+              <input class="visually-hidden form__input form__input--checkbox" type="checkbox" name="color" value="white" id="filter-white" checked>
+              <label class="forma__label forma__label--checkbox" for="filter-white">Белый</label>
+            </li>
+            <li class="form__item form__item--checkbox">
+              <input class="visually-hidden form__input form__input--checkbox" type="checkbox" name="color" value="grey" id="filter-grey" checked>
+              <label class="forma__label forma__label--checkbox" for="filter-grey">Серый</label>
+            </li>
+            <li class="form__item form__item--checkbox">
+              <input class="visually-hidden form__input form__input--checkbox" type="checkbox" name="color" value="tiffany" id="filter-tiffany">
+              <label class="forma__label forma__label--checkbox" for="filter-tiffany">Тиффани</label>
+            </li>
+            <li class="form__item form__item--checkbox">
+              <input class="visually-hidden form__input form__input--checkbox" type="checkbox" name="color" value="black" id="filter-black">
+              <label class="forma__label forma__label--checkbox" for="filter-black">Черный</label>
+            </li>
+            <li class="form__item form__item--checkbox">
+              <input class="visually-hidden form__input form__input--checkbox" type="checkbox" name="color" value="pink" id="filter-pink">
+              <label class="forma__label forma__label--checkbox" for="filter-pink">Розовый</label>
+            </li>
+            <li class="form__item form__item--checkbox">
+              <input class="visually-hidden form__input form__input--checkbox" type="checkbox" name="color" value="orange" id="filter-orange">
+              <label class="forma__label forma__label--checkbox" for="filter-orange">Оранжевый</label>
             </li>
           </ul>
         </div>
