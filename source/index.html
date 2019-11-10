@@ -179,6 +179,29 @@
       </div>
     </div>
   </footer>
+  <section class="modal-size">
+    <h1 class="modal-size__title">добавить в корзину</h1>
+    <form class="modal-size form" action="https://echo.htmlacademy.ru" method="post">
+      <fieldset class="form__fieldset">
+        <legend class="form__legend">Выберете размер:</legend>
+        <ul class="form__list form__list--modal">
+          <li class="form__item form__item--modal">
+            <input class="visually-hidden form__input form__input--modal" type="radio" name="size" value="s" id="size-s" checked>
+            <label class="form__label form__label--modal" for="size-s">s</label>
+          </li>
+          <li class="form__item form__item--modal">
+            <input class="visually-hidden form__input form__input--modal" type="radio" name="size" value="m" id="size-m">
+            <label class="form__label form__label--modal" for="size-m">m</label>
+          </li>
+          <li class="form__item form__item--modal">
+            <input class="visually-hidden form__input form__input--modal" type="radio" name="size" value="l" id="size-l">
+            <label class="form__label form__label--modal" for="size-l">l</label>
+          </li>
+        </ul>
+      </fieldset>
+      <button class="button form__button form__button--modal">добавить</button>
+    </form>
+  </section>
 </body>
 
 </html>
