@@ -1,0 +1,18 @@
+.nav-menu {
+  position: relative;
+  /*min-height: 71px;*/
+}
+
+@media (max-width: 768px) {}
+
+@media(min-width: $md) {
+
+  .nav-menu__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .nav-menu__button {
+    display: none;
+  }
+}
