@@ -44,3 +44,15 @@
 .contacts__map {
   margin-bottom: 40px;
 }
+
+.contacts__button {
+  @include button();
+
+  width: 260px;
+  margin: 0 auto;
+  padding: 16px 10px;
+
+  font-size: 18px;
+  line-height: 20px;
+  text-decoration: none;
+}

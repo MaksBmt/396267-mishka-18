@@ -1,10 +1,9 @@
 @charset "UTF-8";
-
 @import "variables";
 @import "fonts";
 @import "mixins";
 @import "core";
-
+@import "normalize";
 @import "blocks/site-list";
 @import "blocks/nav-menu";
 @import "blocks/banner";
@@ -13,3 +12,5 @@
 @import "blocks/advanteges";
 @import "blocks/contacts";
 @import "blocks/footer";
+@import "blocks/social-list";
+@import "blocks/review";
