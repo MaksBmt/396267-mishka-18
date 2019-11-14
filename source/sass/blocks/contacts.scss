@@ -24,6 +24,7 @@
 
 .contacts__item {
   display: flex;
+  margin-bottom: 30px;
 
   font-size: 15px;
   line-height: 30px;
@@ -39,12 +40,11 @@
   margin: 0;
 
   &--line {
-    padding-bottom: 10px;
 
     text-decoration: none;
     color: $color-contacts-email;
 
-    border-bottom: 1px $color-line;
+    border-bottom: 1px solid $color-line;
   }
 }
 
