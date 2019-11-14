@@ -75,6 +75,10 @@
   padding-left: 62px;
   position: relative;
 
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: 700;
+
   cursor: pointer;
   user-select: none;
 
@@ -125,7 +129,7 @@
       width: 36px;
       height: 36px;
 
-      border: 2px solid $black;
+      border: 2px solid $bg-checked-checkbox;
     }
 
     &:checked + label::after {
@@ -139,8 +143,8 @@
       width: 20px;
       height: 9px;
 
-      border-left: 2px solid $bg-checked-checkbox;
-      border-bottom: 2px solid $bg-checked-checkbox;
+      border-left: 2px solid $black;
+      border-bottom: 2px solid $black;
 
       transform: rotate(-45deg);
     }
@@ -159,8 +163,8 @@
     border-bottom: 2px solid $black;
 
     &::placeholder {
-      font-size: 14px;
-      line-height: 16px;
+      font-size: 17px;
+      line-height: 18px;
       color: $color-textaria-text;
     }
   }
