@@ -18,6 +18,8 @@
   padding-left: 30px;
   padding-right: 30px;
   margin-bottom: 40px;
+
+  list-style: none;
 }
 
 .contacts__item {
@@ -35,6 +37,15 @@
 
 .contacts__description {
   margin: 0;
+
+  &--line {
+    padding-bottom: 10px;
+
+    text-decoration: none;
+    color: $color-contacts-email;
+
+    border-bottom: 1px $color-line;
+  }
 }
 
 .contacts__description__address {
