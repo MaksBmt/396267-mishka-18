@@ -40,10 +40,15 @@
 
 .site-list__link--search,
 .site-list__link--card {
-  padding-left: 30px;
+  position: relative;
 
   svg {
-    padding-right: 25px;
+    position: absolute;
+
+    left: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+
     fill: rgba(0, 0, 0, 0.2);
   }
 }
