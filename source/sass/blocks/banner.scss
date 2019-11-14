@@ -6,7 +6,7 @@
   padding-top: 30px;
   margin-bottom: 30px;
 
-  background-image: url("/img/hero-mobile@1x.jpg");
+  background-image: url("../img/hero-mobile@1x.jpg");
   background-size: 573px 373px;
   background-repeat: no-repeat;
   background-position: center -15px;
@@ -27,6 +27,17 @@
   padding-top: 26px;
   padding-bottom: 30px;
   padding-left: 30px;
+
+  &--interior {
+    position: relative;
+
+    background-color: $bg-interior;
+  }
+
+  &--toys {
+    position: relative;
+    background-color: $bg-toys;
+  }
 }
 
 .banner__link {
@@ -43,15 +54,4 @@
 .banner__text {
   max-width: 130px;
   margin: 0;
-}
-
-.banner__item--interior {
-  position: relative;
-
-  background-color: $bg-interior;
-}
-
-.banner__item--toys {
-  position: relative;
-  background-color: $bg-toys;
 }
