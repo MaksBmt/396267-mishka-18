@@ -1,0 +1,43 @@
+@mixin min-max($min-width, $max-width, $padding) {
+  min-width: $min-width;
+  max-width: $max-width;
+  padding: 0 $padding;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+@mixin visually-hidden() {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+}
+
+@mixin button($bg: $bg-button-primery, $border-color: $border-button-primery) {
+  background-color: $bg;
+  min-width: 174px;
+  border: 2px solid $border-color;
+  font-size: 17px;
+  color: $color-button;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  display: block;
+  cursor: pointer;
+  box-shadow: none;
+  appearance: none;
+  transition-property: background-color, border-color;
+  transition-duration: 500ms;
+  @content;
+
+  &:hover {
+    background-color: $bg-button-hover;
+    color: $white;
+  }
+}

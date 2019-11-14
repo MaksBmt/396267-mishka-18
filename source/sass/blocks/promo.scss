@@ -1,0 +1,75 @@
+.promo__wrap {
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 38px;
+  margin-bottom: 30px;
+}
+
+.promo__header {
+  margin-bottom: 24px;
+}
+
+.promo__title {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 10px;
+
+  font-size: 25px;
+  color: $black;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+.promo__marker {
+  margin: 0;
+
+  font-size: 17px;
+  color: $color-promo-marker;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 20px;
+}
+
+.promo__description {
+  padding: 0;
+  margin: 0;
+  padding-bottom: 18px;
+
+  font-size: 15px;
+  color: $color-promo-description;
+  line-height: 24px;
+}
+
+.promo__table {
+  margin-bottom: 28px;
+}
+
+.promo__image-wrap {
+  margin-bottom: 28px;
+
+  text-align: center;
+}
+
+.promo__img {
+  width: 260px;
+  height: 315px;
+}
+
+.promo__price {
+  margin: 0;
+  padding-bottom: 26px;
+
+  text-align: center;
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 700;
+  color: $color-promo-table;
+}
+
+.promo__button {
+  @include button();
+
+  width: 260px;
+  padding: 16px 0;
+  margin: 0 auto;
+}

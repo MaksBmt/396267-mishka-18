@@ -1,0 +1,17 @@
+.table-feature {
+  width: 100%;
+
+  font-size: 15px;
+  line-height: 20px;
+  color: $color-table-body;
+
+  border-collapse: collapse;
+}
+
+.table-feature__row {
+  border-bottom: 1px solid $border-table;
+}
+
+.table-feature__td {
+  padding: 10px 10px 10px 0;
+}

@@ -1,0 +1,21 @@
+.catalog__title {
+  margin: 0;
+  padding-bottom: 70px;
+  padding-top: 75px;
+
+  font-size: 27px;
+  font-weight: 700;
+  line-height: 30px;
+  text-align: center;
+
+  background-color: $bg-catalog;
+}
+
+.catalog__list {
+  padding-left: 30px;
+  padding-right: 30px;
+  margin: 0;
+  list-style: none;
+
+  background-color: $white;
+}

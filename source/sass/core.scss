@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+/**
+ * Основные стили
+ **/
+
+html {
+  font-size: 16px;
+  color: $black;
+}
+
+body {
+  font-family: "Open Sans", "Arial", sans-serif;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  text-decoration-skip: objects;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.wrap {
+  @include min-max(320px, 1150px, 0);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+}

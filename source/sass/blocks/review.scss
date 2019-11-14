@@ -1,0 +1,67 @@
+.review__wrap {
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 50px;
+  margin-bottom: 40px;
+}
+
+.review__title {
+  margin: 0;
+  margin-bottom: 32px;
+
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 700;
+}
+
+.review__deskription {
+  margin: 0;
+  margin-bottom: 35px;
+}
+
+.review__text {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 36px;
+
+  font-size: 15px;
+  line-height: 30px;
+  color: $color-review;
+}
+
+.review__writer {
+  display: block;
+  margin-bottom: 34px;
+
+  font-style: normal;
+}
+
+.review__name {
+  display: block;
+  margin-bottom: 10px;
+
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: 700;
+}
+
+.review__link {
+  display: block;
+
+  color: $color-review;
+  font-size: 17px;
+  text-decoration: none;
+}
+
+.review__button {
+  width: 260px;
+  margin: 0 auto;
+  padding-top: 14px;
+  padding-bottom: 14px;
+
+  @include button();
+
+  font-size: 18px;
+  line-height: 20px;
+  text-decoration: none;
+}
