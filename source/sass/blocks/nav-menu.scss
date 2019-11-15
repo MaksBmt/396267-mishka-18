@@ -1,3 +1,11 @@
 .nav-menu__button {
   display: none;
 }
+
+@media(min-width: $md) {
+
+  .nav-menu__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}

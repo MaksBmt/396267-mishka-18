@@ -19,6 +19,8 @@ $bg-catalog: #f1f1f1;
 $bg-form: #f1f1f1;
 $bg-checked-radio: #62d1ba;
 $bg-checked-checkbox: #444444;
+$bg-header-index: #fafafa;
+$bg-header-inner: #f1f1f1;
 
 $color-promo-marker: #63d1bb;
 $color-promo-description: #444444;
@@ -28,6 +30,7 @@ $color-button: #444444;
 $color-review: #444444;
 $color-product-description: #444444;
 $color-table-body: #444444;
+$color-order-description: #444444;
 $color-contacts-email: #444444;
 $color-line: #62d1ba;
 $color-legend: #63d1bb;
@@ -36,3 +39,7 @@ $color-video-description: #444444;
 $color-textaria-placeholder: rgba(68, 68, 68, 0.3);
 $color-textaria-communication: rgba(68, 68, 68, 0.3);
 $color-textaria-text: rgba(68, 68, 68, 0.3);
+
+$sx: 320px;
+$md: 768px;
+$lg: 1150px;
