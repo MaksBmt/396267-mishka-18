@@ -2,9 +2,8 @@
   display: none;
 }
 
-@media(min-width: $md) {
-
-  .nav-menu__list {
+.nav-menu__list {
+  @media (min-width: $md) {
     display: flex;
     flex-wrap: wrap;
   }
