@@ -9,6 +9,18 @@
   text-align: center;
 
   background-color: $bg-catalog;
+
+  @media (min-width: $md) {
+    padding-top: 45px;
+
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @media (min-width: $lg) {
+    font-size: 53px;
+    line-height: 57px;
+  }
 }
 
 .catalog__list {
@@ -18,4 +30,15 @@
   list-style: none;
 
   background-color: $white;
+
+  @media (min-width: $md) {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  @media (min-width: $lg) {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
 }

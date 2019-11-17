@@ -2,6 +2,18 @@
   padding-left: 30px;
   padding-right: 30px;
   margin-bottom: 55px;
+
+  @media (min-width: $md) {
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-bottom: 75px;
+  }
+
+  @media (min-width: $lg) {
+    margin-bottom: 90px;
+    padding-left: 225px;
+    padding-right: 175px;
+  }
 }
 
 .advanteges__title {
@@ -11,20 +23,69 @@
   font-size: 25px;
   line-height: 30px;
   font-weight: 700;
+
+  @media (min-width: $md) {
+    margin-bottom: 40px;
+
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @media (min-width: $lg) {
+    margin-bottom: 35px;
+
+    font-size: 53px;
+    line-height: 57px;
+  }
 }
 
 .advanteges__list {
   margin: 0;
   padding-left: 0;
   list-style: none;
+
+  @media (min-width: $md) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .advanteges__item {
   margin: 0;
   padding: 0;
-  padding-top: 100px;
+  padding-top: 55px;
+  margin-bottom: 30px;
 
   font-size: 17px;
   line-height: 20px;
   font-weight: 700;
+
+  @media (min-width: $md) {
+    flex-basis: 50%;
+    margin-bottom: 50px;
+
+    &--eco {
+      order: 1;
+    }
+
+    &--austerity {
+      order: 3;
+    }
+
+    &--like {
+      order: 5;
+    }
+
+    &--love {
+      order: 2;
+    }
+
+    &--protege {
+      order: 4;
+    }
+
+    &--present {
+      order: 6;
+    }
+  }
 }

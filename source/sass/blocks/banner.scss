@@ -10,6 +10,18 @@
   background-size: 573px 373px;
   background-repeat: no-repeat;
   background-position: center -15px;
+
+  @media (min-width: $md) {
+
+    min-height: 700px;
+    padding-top: 115px;
+    margin-bottom: 50px;
+  }
+
+  @media (min-width: $lg) {
+    margin-bottom: 130px;
+    padding-top: 120px;
+  }
 }
 
 .banner__title {
@@ -21,6 +33,34 @@
   line-height: 30px;
   font-weight: 700;
   text-align: center;
+
+  @media (min-width: $md) {
+
+    padding: 0;
+    margin: 0 auto;
+    padding-left: 87px;
+    padding-right: 87px;
+    margin-bottom: auto;
+
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @media (min-width: $lg) {
+    font-size: 53px;
+    line-height: 57px;
+
+    padding-left: 260px;
+    padding-right: 270px;
+  }
+}
+
+.banner__list {
+  @media (min-width: $md) {
+    display: flex;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
 }
 
 .banner__item {
@@ -28,15 +68,37 @@
   padding-bottom: 30px;
   padding-left: 30px;
 
+  @media (min-width: $md) {
+    flex-grow: 1;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+  }
+
   &--interior {
     position: relative;
 
     background-color: $bg-interior;
+
+    @media (min-width: $md) {
+      &:hover {
+        background-color: $hover-bg-interior;
+        transform: translateY(-5px);
+      }
+    }
   }
 
   &--toys {
     position: relative;
     background-color: $bg-toys;
+
+    @media (min-width: $md) {
+      &:hover {
+        background-color: $hover-bg-toys;
+        transform: translateY(-5px);
+      }
+    }
   }
 }
 

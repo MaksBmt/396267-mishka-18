@@ -1,0 +1,41 @@
+.header {
+  position: relative;
+
+  background-color: $bg-header-inner;
+
+  @media (min-width: $lg) {
+    &::before {
+      position: absolute;
+      content: "";
+
+      top: 0;
+      left: 0;
+
+      height: calc(100% - 69px);
+      width: calc(50vw - 575px);
+
+      background-color: $white;
+      border-bottom: 1px solid $border-header;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+
+      top: 0;
+      right: 0;
+
+      height: calc(100% - 69px);
+      width: calc(50vw - 575px);
+
+      background-color: $white;
+      border-bottom: 1px solid $border-header;
+    }
+  }
+
+  &--bg {
+    @media (min-width: $md) {
+      background-color: $bg-header-index;
+    }
+  }
+}
