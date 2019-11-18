@@ -48,7 +48,6 @@
 .form__legend {
   width: 100%;
   padding: 0;
-  padding-left: 30px;
   padding-right: 30px;
   display: flex;
 
@@ -167,8 +166,8 @@
       width: 50%;
     }
 
-    @media (min-width: $md) {
-      width: 33%;
+    @media (min-width: $lg) {
+      width: 33.3%;
     }
   }
 
