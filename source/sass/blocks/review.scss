@@ -3,6 +3,30 @@
   padding-right: 30px;
   padding-bottom: 50px;
   margin-bottom: 40px;
+
+  @media (min-width: $md) {
+    display: grid;
+    grid-template-columns: 167px auto 176px;
+    grid-template-rous: 52px 120px auto;
+
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 80px;
+    padding-bottom: 130px;
+
+    background-image: url("../img/review@1x.jpg");
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-size: 350px 457px;
+  }
+
+  @media (min-width: $lg) {
+    padding-left: 225px;
+    padding-bottom: 180px;
+    margin-bottom: 75px;
+
+    background-position-x: 50px;
+  }
 }
 
 .review__title {
@@ -12,11 +36,42 @@
   font-size: 25px;
   line-height: 30px;
   font-weight: 700;
+
+  @media (min-width: $md) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    margin-bottom: 0;
+
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @media (min-width: $lg) {
+    font-size: 53px;
+    line-height: 57px;
+  }
+}
+
+.review__list {
+  margin: 0;
+  margin-bottom: 35px;
+
+  @media (min-width: $md) {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 4;
+
+    padding-top: 50px;
+  }
 }
 
 .review__deskription {
+  display: flex;
+  flex-direction: column;
   margin: 0;
-  margin-bottom: 35px;
 }
 
 .review__text {
@@ -27,6 +82,14 @@
   font-size: 15px;
   line-height: 30px;
   color: $color-review;
+
+  @media (min-width: $md) {
+    margin-bottom: 65px;
+    padding-right: 25px;
+
+    font-size: 17px;
+    line-height: 30px;
+  }
 }
 
 .review__writer {
@@ -34,6 +97,10 @@
   margin-bottom: 34px;
 
   font-style: normal;
+
+  @media (min-width: $md) {
+    margin-bottom: 0;
+  }
 }
 
 .review__name {
@@ -53,6 +120,18 @@
   text-decoration: none;
 }
 
+.review__rewind {
+  margin-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (min-width: $md) {
+    margin: 0;
+    margin-left: auto;
+    margin-top: -40px;
+  }
+}
+
 .review__button {
   width: 260px;
   margin: 0 auto;
@@ -64,4 +143,19 @@
   font-size: 18px;
   line-height: 20px;
   text-decoration: none;
+
+  @media (min-width: $md) {
+    /* grid-column: 3/4;
+    grid-row: 1/2;*/
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    width: 176px;
+  }
+
+  @media (min-width: $lg) {
+    margin-top: auto;
+    margin-left: auto;
+  }
 }

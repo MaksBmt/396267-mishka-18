@@ -13,6 +13,24 @@
   font-weight: 700;
 
   background-color: $bg-form;
+
+  @media (min-width: $md) {
+    font-size: 43px;
+    line-height: 50px;
+
+    padding-top: 38px;
+    padding-bottom: 75px;
+    margin-bottom: 80px;
+  }
+
+  @media (min-width: $lg) {
+    padding-top: 45px;
+    padding-bottom: 100px;
+    margin-bottom: 130px;
+
+    font-size: 53px;
+    line-height: 57px;
+  }
 }
 
 .order__description {
@@ -23,4 +41,18 @@
   font-size: 13px;
   line-height: 24px;
   color: $color-order-description;
+
+  @media (min-width: $md) {
+    padding-left: 50px;
+    padding-right: 100px;
+    padding-bottom: 50px;
+
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  @media (min-width: $lg) {
+    padding-left: 225px;
+    padding-right: 225px;
+  }
 }

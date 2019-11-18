@@ -1,14 +1,53 @@
 .form__fieldset {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  position: relative;
+  &--checkbox {
+    @media (min-width: $md) {
+      background-color: $bg-checkbox-wrap;
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+  }
+
+  &--communication {
+    @media (min-width: $md) {
+      background-color: $bg-communication-wrap;
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+  }
+
+  &--textarea {
+    @media (min-width: $md) {
+      margin-top: 50px;
+      margin-bottom: 38px;
+    }
+  }
+
+  &--name {
+    @media (min-width: $md) {
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+  }
+}
+
+.form__fieldset-wrap {
+  padding-left: 30px;
+  padding-right: 30px;
+
+  @media (min-width: $md) {
+    display: flex;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  @media (min-width: $lg) {
+    padding-left: 112px;
+  }
 }
 
 .form__legend {
   width: 100%;
   padding: 0;
-  padding-left: 30px;
   padding-right: 30px;
   display: flex;
 
@@ -19,23 +58,48 @@
   color: $color-legend;
   align-items: center;
 
+  @media (min-width: $md) {
+    width: auto;
+    padding: 0;
+    margin-top: 40px;
+    margin-right: 130px;
+
+    align-items: flex-start;
+  }
+
+  @media (min-width: $lg) {
+    margin-right: 70px;
+  }
+
   &::after {
     content: "";
     margin-left: 25px;
     height: 1px;
     background-color: $color-legend;
     flex-grow: 1;
+
+    @media (min-width: $md) {
+      content: none;
+    }
   }
 
   &--communication {
     padding-left: 0;
     padding-right: 0;
+    margin-top: 15px;
   }
-}
 
-.form__fieldset-wrap {
-  padding-left: 30px;
-  padding-right: 30px;
+  &--email {
+    @media (min-width: $md) {
+      margin-right: 0;
+      padding-right: 105px;
+      min-width: 60px;
+    }
+
+    @media (min-width: $lg) {
+      padding-right: 45px;
+    }
+  }
 }
 
 .form__list {
@@ -48,6 +112,10 @@
   &--text {
     display: block;
     width: 100%;
+
+    @media (min-width: $lg) {
+      padding-right: 175px;
+    }
   }
 
   &--communication {
@@ -55,6 +123,29 @@
     padding-left: 30px;
     padding-right: 30px;
     padding-top: 0;
+
+    @media (min-width: $md) {
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+
+    @media (min-width: $lg) {
+      padding-left: 112px;
+      padding-right: 225px;
+    }
+  }
+
+  &--checkbox {
+    @media (min-width: $md) {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+
+  &--radio {
+    @media (min-width: $md) {
+      margin-bottom: 28px;
+    }
   }
 }
 
@@ -64,6 +155,26 @@
   &--text {
     display: flex;
     flex-direction: column;
+
+    @media (min-width: $md) {
+      flex-direction: row;
+    }
+  }
+
+  &--checkbox {
+    @media (min-width: $md) {
+      width: 50%;
+    }
+
+    @media (min-width: $lg) {
+      width: 33.3%;
+    }
+  }
+
+  &--communication {
+    @media (min-width: $md) {
+      display: flex;
+    }
   }
 }
 
@@ -82,8 +193,16 @@
   cursor: pointer;
   user-select: none;
 
+  @media (min-width: $md) {
+    max-width: 100%;
+  }
+
   &--text {
     padding: 0;
+
+    @media (min-width: $md) {
+      margin-right: 30px;
+    }
   }
 }
 
@@ -186,6 +305,10 @@
       line-height: 18px;
       color: $color-textaria-communication;
     }
+
+    @media (min-width: $md) {
+      background-color: $bg-input-communication;
+    }
   }
 }
 
@@ -215,12 +338,31 @@
 
 .form__textaria {
   margin-bottom: 15px;
+
+  @media (min-width: $md) {
+    width: 100%;
+  }
+
+  @media (min-width: $lg) {
+    padding-right: 175px;
+  }
 }
 
 .form__wrap-content {
   display: flex;
   flex-direction: column;
   margin-bottom: 55px;
+
+  @media (min-width: $md) {
+    flex-direction: row;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  @media (min-width: $lg) {
+    padding-left: 225px;
+    padding-right: 225px;
+  }
 }
 
 .form__note {
@@ -230,6 +372,14 @@
   font-size: 14px;
   line-height: 16px;
   color: $color-form-note;
+
+  @media (min-width: $md) {
+    order: 2;
+    margin-left: auto;
+    margin-right: 0;
+    margin-bottom: auto;
+    margin-top: auto;
+  }
 }
 
 .form__button {
@@ -239,4 +389,10 @@
   padding-top: 16px;
   padding-bottom: 16px;
   margin: 0 auto;
+
+  @media (min-width: $md) {
+    order: 1;
+    margin: 0;
+    width: 230px;
+  }
 }
