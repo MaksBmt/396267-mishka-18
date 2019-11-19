@@ -12,10 +12,12 @@
   background-position: center -15px;
 
   @media (min-width: $md) {
+    min-height: 685px;
+    padding-top: 93px;
+    margin-bottom: 55px;
 
-    min-height: 700px;
-    padding-top: 115px;
-    margin-bottom: 50px;
+    background-size: 1150px 745px;
+    background-position: center bottom;
   }
 
   @media (min-width: $lg) {
@@ -70,6 +72,7 @@
 
   @media (min-width: $md) {
     flex-grow: 1;
+    padding-top: 28px;
 
     cursor: pointer;
 
@@ -80,6 +83,24 @@
     position: relative;
 
     background-color: $bg-interior;
+
+    &::after {
+      position: absolute;
+      content: "";
+
+      top: 50%;
+      right: 42px;
+
+      height: 66px;
+      width: 42px;
+
+      background-image: url("../img/icon-interior.svg");
+      background-repeat: no-repeat;
+      background-size: 42px 66px;
+      opacity: 0.2;
+
+      transform: translateY(-50%);
+    }
 
     @media (min-width: $md) {
       &:hover {
@@ -92,6 +113,24 @@
   &--toys {
     position: relative;
     background-color: $bg-toys;
+
+    &::after {
+      position: absolute;
+      content: "";
+
+      top: 50%;
+      right: 31px;
+
+      height: 64px;
+      width: 64px;
+
+      background-image: url("../img/icon-toy.svg");
+      background-repeat: no-repeat;
+      background-size: 64px 64px;
+      opacity: 0.2;
+
+      transform: translateY(-50%);
+    }
 
     @media (min-width: $md) {
       &:hover {
@@ -106,14 +145,20 @@
   display: block;
   flex-grow: 1;
 
-  font-size: 19px;
-  line-height: 24px;
-  font-weight: 700;
-  color: $white;
   text-decoration: none;
 }
 
 .banner__text {
   max-width: 130px;
   margin: 0;
+
+  font-size: 19px;
+  line-height: 24px;
+  font-weight: 700;
+  color: $white;
+
+  @media (min-width: $md) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
