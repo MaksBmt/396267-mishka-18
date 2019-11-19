@@ -10,13 +10,13 @@
 
 <body>
   <header class="header">
-    <div class="header__wrap wrap">
-      <nav class="header__nav-menu nav-menu">
+    <div class="header__wrap  wrap">
+      <nav class="header__nav-menu nav-menu nav-menu--opened nav-menu--nojs">
         <button class="nav-menu__button">
           <span class="visually-hidden">Открыть</span>
         </button>
         <ul class="nav-menu__list site-list">
-          <li class="site-list__item site-list__item--logo">
+          <li class="site-list__item site-list__item--logo site-list__item--activ">
             <a class="site-list__link site-list__link--logo" href="index.html">
               <img width="86" height="36" src="img/logo-mobile.svg" alt="логотип магазина Мишка">
             </a>
@@ -154,7 +154,7 @@
   </section>
   <footer class="footer">
     <div class="footer__wrap wrap">
-      <a class="footer__logo-link">
+      <a class="footer__logo-link" href="index.html">
         <img src="img/logo-footer.svg" alt="логотип магазина Мишка" width="102" height="35">
       </a>
       <ul class="footer__social social-list">
@@ -206,5 +206,6 @@
   </section>
   <div class="modal-overlay"></div>
 </body>
+<script src="js/common.js"></script>
 
 </html>

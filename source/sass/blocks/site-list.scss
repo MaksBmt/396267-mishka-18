@@ -17,12 +17,31 @@
   text-decoration: none;
 
   border-bottom: 1px solid $border-header;
+  box-sizing: border-box;
+
+  &[href] {
+    &:hover {
+      color: $hover-color-menu;
+    }
+
+    &:active {
+      color: $activ-color-menu;
+    }
+  }
 
   &--logo {
     margin: 0 auto;
     padding: 0;
 
     border-bottom: 0;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 
   &--search,
@@ -37,6 +56,18 @@
       transform: translateY(-50%);
 
       fill: rgba(0, 0, 0, 0.2);
+    }
+
+    &:hover {
+      svg {
+        fill: $hover-color-search;
+      }
+    }
+
+    &:active {
+      svg {
+        fill: $activ-color-search;
+      }
     }
   }
 
@@ -125,6 +156,8 @@
 
     display: flex;
     padding-left: 0;
+
+    box-sizing: border-box;
   }
 
   &--logo {
@@ -157,7 +190,7 @@
     @media (min-width: $md) {
       display: flex;
       order: 5;
-      flex-basis: 45%;
+      flex-basis: 35%;
       flex-grow: 1;
       justify-content: flex-end;
       padding-right: 50px;
@@ -217,7 +250,7 @@
 
       order: 3;
       display: flex;
-      flex-basis: 40%;
+      flex-basis: 50%;
       padding-left: 50px;
     }
 

@@ -1,7 +1,9 @@
 .header {
   position: relative;
 
-  background-color: $bg-header-inner;
+  @media (min-width: $md) {
+    background-color: $bg-header-inner;
+  }
 
   @media (min-width: $lg) {
     &::before {
