@@ -24,6 +24,8 @@
 }
 
 .catalog__list {
+  display: flex;
+  flex-wrap: wrap;
   padding-left: 30px;
   padding-right: 30px;
   margin: 0;

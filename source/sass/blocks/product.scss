@@ -5,13 +5,44 @@
 .product__item {
   display: flex;
   flex-direction: column;
+  margin: 0 auto;
   margin-bottom: 32px;
+  width: 260px;
+
+  &:hover {
+    .product__wrap-data {
+      box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+    }
+
+    .product__cart-img {
+      fill: $hover-product-cart;
+    }
+
+    .product__title {
+      opacity: 0.5;
+    }
+  }
+
+  &:active {
+    .product__wrap-data {
+      box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
+    }
+
+    .product__cart-img {
+      fill: $active-product-cart;
+    }
+
+    .product__title {
+      opacity: 0.2;
+    }
+  }
 
   border: 1px solid $border-product;
 
   @media (min-width: $md) and (max-width: $lg-1) {
     flex-direction: row;
     flex-wrap: wrap;
+    width: 668px;
   }
 
   @media (min-width: $lg) {
@@ -25,11 +56,12 @@
   text-decoration: none;
 
   img {
-    width: 100%;
+    max-width: auto;
+    height: 200px;
 
     @media (min-width: $md) and (max-width: $lg-1) {
-      width: 335px;
-      height: 336px;
+      width: 334px;
+      height: 334px;
       margin-bottom: 0;
     }
 
@@ -41,23 +73,30 @@
 }
 
 .product__wrap-data {
+  box-sizing: border-box;
+
   @media (min-width: $md) {
-    flex-basis: 45%;
+    flex-basis: 49.8%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    min-height: 195px;
+
+    @media (min-width: $lg) {
+      max-height: 195px;
+    }
   }
 }
 
 .product__description-wrap {
   padding-left: 28px;
   padding-top: 28px;
+  box-sizing: border-box;
 }
 
 .product__title {
   margin: 0;
-  padding-right: 50px;
+  padding: 0;
+  margin-bottom: 10px;
 
   font-size: 17px;
   line-height: 24px;
@@ -67,14 +106,14 @@
   @media (min-width: $md) {
     padding-right: 0;
     font-size: 20px;
-    line-height: 24px;
   }
 }
 
 .product__description {
   font-size: 13px;
   line-height: 30px;
-  margin-bottom: 36px;
+  margin-top: 0;
+  margin-bottom: 18px;
 
   color: $color-product-description;
 
@@ -91,12 +130,21 @@
   margin-right: 28px;
 
   border-top: 1px solid $border-product;
-  padding-bottom: 17px;
-  padding-top: 22px;
+  padding-bottom: 26px;
+  padding-top: 20px;
+
+  @media (min-width: $md) {
+    margin-left: 32px;
+    margin-right: 32px;
+  }
 }
 
 .product__price {
   font-size: 15px;
   font-weight: 700;
   line-height: 24px;
+}
+
+.product__cart-img {
+  fill: $color-product-cart;
 }
