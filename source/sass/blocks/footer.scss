@@ -13,7 +13,7 @@
   @media (min-width: $md) {
     flex-direction: row;
     align-items: center;
-    padding-top: 50px;
+    padding-top: 52px;
     padding-bottom: 40px;
     padding-left: 50px;
     padding-right: 50px;
@@ -22,7 +22,7 @@
   @media (min-width: $lg) {
     padding-right: 100px;
     padding-left: 100px;
-    padding-bottom: 50px;
+    padding-bottom: 52px;
   }
 }
 
@@ -33,9 +33,23 @@
     display: block;
     margin-right: calc(50vw - 225px);
 
-    img {
+    svg {
       height: 35px;
       width: 102px;
+    }
+
+    &[href] {
+      &:hover {
+        svg {
+          fill: $hover-logo-footer;
+        }
+      }
+
+      &:active {
+        svg {
+          fill: $active-logo-footer;
+        }
+      }
     }
   }
 
@@ -77,6 +91,16 @@
   &:hover {
     svg {
       fill: $hover-footer-copyright;
+    }
+  }
+
+  &:active {
+    svg {
+      fill: $active-footer-copyright;
+    }
+
+    .footer__copyright-text {
+      color: $active-copyright-text;
     }
   }
 

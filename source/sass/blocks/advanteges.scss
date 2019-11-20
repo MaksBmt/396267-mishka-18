@@ -39,22 +39,19 @@
 }
 
 .advanteges__list {
+  display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding-left: 0;
   list-style: none;
-
-  @media (min-width: $md) {
-    display: flex;
-    flex-wrap: wrap;
-  }
 }
 
 .advanteges__item {
   position: relative;
-  margin: 0;
   padding: 0;
   padding-top: 54px;
   margin-bottom: 30px;
+  width: 260px;
 
   font-size: 17px;
   line-height: 20px;
