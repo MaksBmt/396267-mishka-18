@@ -97,16 +97,8 @@
       background-image: url("../img/icon-interior.svg");
       background-repeat: no-repeat;
       background-size: 42px 66px;
-      opacity: 0.2;
-
+      opacity: 0.5;
       transform: translateY(-50%);
-    }
-
-    @media (min-width: $md) {
-      &:hover {
-        background-color: $hover-bg-interior;
-        transform: translateY(-5px);
-      }
     }
   }
 
@@ -127,16 +119,9 @@
       background-image: url("../img/icon-toy.svg");
       background-repeat: no-repeat;
       background-size: 64px 64px;
-      opacity: 0.2;
+      opacity: 0.5;
 
       transform: translateY(-50%);
-    }
-
-    @media (min-width: $md) {
-      &:hover {
-        background-color: $hover-bg-toys;
-        transform: translateY(-5px);
-      }
     }
   }
 }
@@ -146,6 +131,83 @@
   flex-grow: 1;
 
   text-decoration: none;
+
+  &--interior {
+    background-color: $bg-interior;
+
+    @media (min-width: $md) {
+      &:hover {
+        .banner__link--interior {
+          background-color: $hover-bg-interior;
+        }
+
+        .banner__item--interior {
+          transform: translateY(-5px);
+
+          &::after {
+            opacity: 0.7;
+          }
+        }
+      }
+
+
+      &:active {
+        .banner__link--interior {
+          background-color: $active-bg-interior;
+        }
+
+        .banner__item--interior {
+          transform: translateY(-5px);
+
+          &::after {
+            opacity: 0.3;
+          }
+        }
+
+        .banner__text {
+          opacity: 0.4;
+        }
+      }
+    }
+  }
+
+  &--toys {
+    background-color: $bg-toys;
+
+    @media (min-width: $md) {
+      &:hover {
+        .banner__link--toys {
+          background-color: $hover-bg-toys;
+        }
+
+        .banner__item--toys {
+          transform: translateY(-5px);
+
+          &::after {
+            opacity: 0.7;
+          }
+        }
+      }
+
+      &:active {
+        .banner__link--toys {
+          background-color: $active-bg-toys;
+        }
+
+        .banner__item--toys {
+          transform: translateY(-5px);
+
+          &::after {
+            opacity: 0.3;
+          }
+        }
+
+        .banner__text {
+          opacity: 0.4;
+        }
+      }
+    }
+  }
 }
 
 .banner__text {
