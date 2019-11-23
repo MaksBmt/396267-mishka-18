@@ -2,8 +2,8 @@
   position: relative;
   padding-left: 30px;
   padding-right: 30px;
-  padding-bottom: 36px;
-  margin-bottom: 28px;
+  padding-bottom: 40px;
+  margin-bottom: 30px;
 
   @media (min-width: $md) {
     /* display: flex;
@@ -12,7 +12,7 @@
     padding-left: 50px;
     padding-right: 50px;
     padding-bottom: 68px;
-    margin-bottom: 50px;
+    margin-bottom: 51px;
   }
 
   @media (min-width: $lg) {
@@ -91,14 +91,14 @@
   }
 
   @media (min-width: $lg) {
-    /*margin-bottom: 56px;*/
+    margin-bottom: 64px;
   }
 }
 
 .promo__title {
   margin: 0;
   padding: 0;
-  padding-bottom: 10px;
+  padding-bottom: 4px;
 
   font-size: 25px;
   color: $black;
@@ -133,16 +133,16 @@
 
   @media (min-width: $md) {
     max-width: 128px;
-    margin-top: auto;
-    margin-bottom: auto;
+    margin-top: 8px;
 
     text-align: center;
   }
 
   @media (min-width: $lg) {
     order: 1;
-    padding-left: 23px;
-    padding-right: 23px;
+    padding-left: 18px;
+    padding-right: 24px;
+    padding-top: 4px;
   }
 }
 
@@ -158,13 +158,14 @@
 
   @media (min-width: $md) {
     padding-bottom: 35px;
+    margin-top: -20px;
 
     font-size: 17px;
     line-height: 30px;
   }
 
   @media (min-width: $lg) {
-    /*padding-bottom: 60px;*/
+    padding-bottom: 48px;
     /*max-width: 285px;*/
   }
 }
@@ -182,7 +183,7 @@
 }
 
 .promo__image-wrap {
-  margin-bottom: 28px;
+  margin-bottom: 24px;
 
   text-align: center;
 
@@ -192,7 +193,7 @@
     margin-left: auto;
     max-width: 334px;*/
     position: absolute;
-    top: 24px;
+    top: 3px;
     right: 0;
     margin: 0;
     width: 333px;
@@ -203,7 +204,7 @@
   @media (min-width: $lg) {
     /*margin-top: -639px;
     max-width: 525px;*/
-    top: -170px;
+    top: -159px;
     width: 525px;
     height: 636px;
   }

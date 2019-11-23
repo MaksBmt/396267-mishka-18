@@ -6,11 +6,11 @@
   @media (min-width: $md) {
     padding-left: 50px;
     padding-right: 50px;
-    margin-bottom: 75px;
+    margin-bottom: 25px;
   }
 
   @media (min-width: $lg) {
-    margin-bottom: 90px;
+    margin-bottom: 30px;
     padding-left: 225px;
     padding-right: 175px;
   }
@@ -35,6 +35,7 @@
 
     font-size: 53px;
     line-height: 57px;
+    margin-left: -5px;
   }
 }
 
@@ -50,7 +51,7 @@
   position: relative;
   padding: 0;
   padding-top: 54px;
-  margin-bottom: 30px;
+  margin-bottom: 29px;
   width: 260px;
 
   font-size: 17px;
@@ -59,10 +60,14 @@
 
   @media (min-width: $md) {
     flex-basis: 50%;
-    margin-bottom: 50px;
+    margin-bottom: 58px;
 
     font-size: 20px;
     line-height: 22px;
+  }
+
+  @media (min-width: $lg) {
+    flex-basis: 46.75%;
   }
 
   &::before {

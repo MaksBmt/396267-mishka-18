@@ -76,6 +76,10 @@
     width: 100%;
   }
 
+  &--title {
+    width: 100%;
+  }
+
   img {
     display: block;
     width: 260px;
@@ -120,6 +124,14 @@
 
   @media (min-width: $md) {
     padding-top: 25px;
+    padding-bottom: 25px;
+    padding-right: 25px;
+    min-height: 259px;
+  }
+
+  @media (min-width: $lg) {
+    min-height: 122px;
+    padding-bottom: 0;
   }
 }
 
@@ -136,7 +148,7 @@
   @media (min-width: $md) {
     padding-right: 0;
     font-size: 20px;
-    min-width: 260px;
+    /*min-width: 260px;*/
     margin-bottom: 5px;
   }
 }
@@ -165,10 +177,9 @@
   padding-bottom: 26px;
   padding-top: 20px;
 
-  @media (min-width: $md) {
+  @media (min-width: $md) and (max-width: $lg-1) {
     margin-left: 32px;
     margin-right: 32px;
-    margin-top: 176px;
   }
 }
 
