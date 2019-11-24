@@ -6,7 +6,7 @@
   padding-top: 30px;
   padding-left: 30px;
   padding-right: 30px;
-  padding-bottom: 20px;
+  padding-bottom: 24px;
   display: flex;
   flex-direction: column;
 
@@ -30,7 +30,7 @@
 
   @media (min-width: $md) {
     display: block;
-    margin-right: calc(50vw - 225px);
+    margin-right: calc(50vw - 282px);
 
     svg {
       height: 35px;
@@ -53,39 +53,43 @@
   }
 
   @media (min-width: $lg) {
-    margin-right: 353px;
+    margin-right: 293px;
   }
 }
 
 .footer__social {
   margin: 0 auto;
-  padding-bottom: 25px;
+  padding-bottom: 27px;
+  min-width: 260px;
 
   border-bottom: 1px solid $border-footer;
 
   @media (min-width: $md) {
     margin: 0;
     padding-bottom: 0;
-    margin-right: calc(50vw - 308px);
+    margin-right: calc(50vw - 365px);
 
     border-bottom: 0;
   }
 
   @media (min-width: $lg) {
-    margin-right: 270px;
-    min-width: 145px;
+    margin-right: 211px;
   }
 }
 
 .footer__copyright {
   margin: 0 auto;
-  padding-top: 24px;
+  padding-top: 20px;
 
   svg {
     fill: $color-footer-copyright;
 
     transition-property: all;
     transition-duration: 400ms;
+
+    @media (min-width: $lg) {
+      margin-top: 6px;
+    }
   }
 
   &:hover {

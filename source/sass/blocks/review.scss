@@ -42,7 +42,7 @@
     padding-right: 50px;
     padding-top: 77px;
     padding-bottom: 100px;
-    margin-bottom: 60px;
+    margin-bottom: 57px;
 
     background-image: url("../img/review@1x.jpg");
     background-position: left top;
@@ -85,7 +85,7 @@
 
 .review__list {
   margin: 0;
-  margin-bottom: 35px;
+  margin-bottom: 38px;
 
   @media (min-width: $md) {
     order: 3;
@@ -95,8 +95,8 @@
 }
 
 .review__deskription {
-  display: flex;
-  flex-direction: column;
+  /* display: flex;
+ flex-direction: column;*/
   margin: 0;
 }
 

@@ -50,7 +50,7 @@
       @media (min-width: $lg) {
         left: -112px;
         right: auto;
-        top: 102px;
+        top: 100px;
       }
     }
   }
@@ -58,7 +58,7 @@
   @media (min-width: $lg) {
     margin: 0;
     padding: 0;
-    padding-top: 70px;
+    padding-top: 66px;
     margin-bottom: 48px;
 
     font-size: 53px;
@@ -151,7 +151,7 @@
 }
 
 .contacts__map {
-  margin-bottom: 38px;
+  margin-bottom: 40px;
   box-sizing: border-box;
 
   @media (min-width: $md) {
