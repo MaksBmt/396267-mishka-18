@@ -1,10 +1,37 @@
+.banner {
+  position: relative;
+  background-color: $bg-banner;
+
+  @media (min-width: $md) {
+    &::after {
+      position: absolute;
+      content: "";
+      bottom: -12px;
+      width: 100%;
+      height: 24px;
+
+      background-size: 768px 24px;
+      background-position-x: 0;
+      background-image: url("../img/bg-zigzag-fill.svg");
+      background-repeat: repeat-x;
+
+      @media (min-width: $lg) {
+        bottom: -17px;
+        height: 34px;
+        background-size: auto 37px;
+        background-position-x: 12px;
+      }
+    }
+  }
+}
+
 .banner__wrap {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   min-height: 490px;
   padding-top: 30px;
-  margin-bottom: 30px;
+  margin-bottom: 26px;
 
   background-image: url("../img/hero-mobile@1x.jpg");
   background-size: 573px 373px;
@@ -12,22 +39,23 @@
   background-position: center -15px;
 
   @media (min-width: $md) {
+    min-height: 685px;
+    padding-top: 93px;
+    margin-bottom: 45px;
 
-    min-height: 700px;
-    padding-top: 115px;
-    margin-bottom: 50px;
+    background-size: 1150px 745px;
+    background-position: center bottom;
   }
 
   @media (min-width: $lg) {
-    margin-bottom: 130px;
-    padding-top: 120px;
+    margin-bottom: 124px;
   }
 }
 
 .banner__title {
   margin: 0;
   padding: 0 30px;
-  margin-bottom: 120px;
+  margin-bottom: 122px;
 
   font-size: 27px;
   line-height: 30px;
@@ -50,8 +78,9 @@
     font-size: 53px;
     line-height: 57px;
 
-    padding-left: 260px;
+    padding-left: 265px;
     padding-right: 270px;
+    margin-bottom: 360px;
   }
 }
 
@@ -66,10 +95,12 @@
 .banner__item {
   padding-top: 26px;
   padding-bottom: 30px;
-  padding-left: 30px;
+  padding-left: 28px;
 
   @media (min-width: $md) {
     flex-grow: 1;
+    padding-top: 28px;
+    padding-left: 36px;
 
     cursor: pointer;
 
@@ -81,11 +112,21 @@
 
     background-color: $bg-interior;
 
-    @media (min-width: $md) {
-      &:hover {
-        background-color: $hover-bg-interior;
-        transform: translateY(-5px);
-      }
+    &::after {
+      position: absolute;
+      content: "";
+
+      top: 50%;
+      right: 36px;
+
+      height: 62px;
+      width: 42px;
+
+      background-image: url("../img/icon-interior.svg");
+      background-repeat: no-repeat;
+      background-size: 42px 66px;
+      opacity: 0.5;
+      transform: translateY(-50%);
     }
   }
 
@@ -93,10 +134,26 @@
     position: relative;
     background-color: $bg-toys;
 
-    @media (min-width: $md) {
-      &:hover {
-        background-color: $hover-bg-toys;
-        transform: translateY(-5px);
+    &::after {
+      position: absolute;
+      content: "";
+
+      top: 50%;
+      right: 24px;
+
+      height: 68px;
+      width: 64px;
+
+      background-image: url("../img/icon-toy.svg");
+      background-repeat: no-repeat;
+      background-size: 64px 64px;
+      opacity: 0.5;
+
+      transform: translateY(-50%);
+
+      @media (min-width: $md) {
+        right: 32px;
+        height: 60px;
       }
     }
   }
@@ -106,14 +163,97 @@
   display: block;
   flex-grow: 1;
 
-  font-size: 19px;
-  line-height: 24px;
-  font-weight: 700;
-  color: $white;
   text-decoration: none;
+
+  &--interior {
+    background-color: $bg-interior;
+
+    @media (min-width: $md) {
+      &:hover {
+        .banner__link--interior {
+          background-color: $hover-bg-interior;
+        }
+
+        .banner__item--interior {
+          transform: translateY(-5px);
+
+          &::after {
+            opacity: 0.7;
+          }
+        }
+      }
+
+
+      &:active {
+        .banner__link--interior {
+          background-color: $active-bg-interior;
+        }
+
+        .banner__item--interior {
+          transform: translateY(-5px);
+
+          &::after {
+            opacity: 0.3;
+          }
+        }
+
+        .banner__text {
+          opacity: 0.4;
+        }
+      }
+    }
+  }
+
+  &--toys {
+    background-color: $bg-toys;
+
+    @media (min-width: $md) {
+      &:hover {
+        .banner__link--toys {
+          background-color: $hover-bg-toys;
+        }
+
+        .banner__item--toys {
+          transform: translateY(-5px);
+
+          &::after {
+            opacity: 0.7;
+          }
+        }
+      }
+
+      &:active {
+        .banner__link--toys {
+          background-color: $active-bg-toys;
+        }
+
+        .banner__item--toys {
+          transform: translateY(-5px);
+
+          &::after {
+            opacity: 0.3;
+          }
+        }
+
+        .banner__text {
+          opacity: 0.4;
+        }
+      }
+    }
+  }
 }
 
 .banner__text {
   max-width: 130px;
   margin: 0;
+
+  font-size: 19px;
+  line-height: 24px;
+  font-weight: 700;
+  color: $white;
+
+  @media (min-width: $md) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
