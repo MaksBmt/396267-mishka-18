@@ -85,4 +85,15 @@
       }
     }
   }
+
+  .nav-menu--nojs {
+    .site-list__item {
+      text-decoration: none;
+
+      &--range,
+      &--user {
+        display: block;
+      }
+    }
+  }
 }

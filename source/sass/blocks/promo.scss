@@ -86,7 +86,7 @@
 
   @media (min-width: $md) {
     display: flex;
-    flex-basis: 80%;
+    /*flex-basis: 80%;*/
     margin-bottom: 50px;
   }
 
@@ -132,7 +132,7 @@
   line-height: 20px;
 
   @media (min-width: $md) {
-    max-width: 128px;
+    max-width: 120px;
     margin-top: 8px;
 
     text-align: center;
@@ -140,8 +140,8 @@
 
   @media (min-width: $lg) {
     order: 1;
-    padding-left: 18px;
-    padding-right: 24px;
+    padding-left: 22px;
+    padding-right: 28px;
     padding-top: 4px;
   }
 }
