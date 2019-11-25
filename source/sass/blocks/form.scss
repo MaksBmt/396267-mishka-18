@@ -2,8 +2,8 @@
   &--checkbox {
     @media (min-width: $md) {
       background-color: $bg-checkbox-wrap;
-      padding-top: 30px;
-      padding-bottom: 30px;
+      padding-top: 27px;
+      /*padding-bottom: 30px;*/
     }
   }
 
@@ -11,21 +11,21 @@
     @media (min-width: $md) {
       background-color: $bg-communication-wrap;
       padding-top: 50px;
-      padding-bottom: 50px;
+      padding-bottom: 25px;
     }
   }
 
   &--textarea {
     @media (min-width: $md) {
-      margin-top: 50px;
-      margin-bottom: 38px;
+      margin-top: 27px;
+      margin-bottom: 37px;
     }
   }
 
   &--name {
     @media (min-width: $md) {
-      margin-top: 30px;
-      margin-bottom: 30px;
+      margin-top: 42px;
+      /*margin-bottom: 30px;*/
     }
   }
 }
@@ -61,10 +61,19 @@
   @media (min-width: $md) {
     width: auto;
     padding: 0;
-    margin-top: 40px;
+    margin-top: 22px;
     margin-right: 130px;
 
     align-items: flex-start;
+  }
+
+  &--checkbox {
+    list-style: none;
+
+    @media (min-width: $md) {
+      margin-top: 37px;
+      margin-right: 125px;
+    }
   }
 
   @media (min-width: $lg) {
@@ -100,6 +109,19 @@
       padding-right: 45px;
     }
   }
+
+  &--name {
+    @media (min-width: $md) {
+      margin-right: 125px;
+    }
+  }
+
+  &--textarea {
+    @media (min-width: $md) {
+      margin-top: 39px;
+      margin-right: 128px;
+    }
+  }
 }
 
 .form__list {
@@ -112,6 +134,13 @@
   &--text {
     display: block;
     width: 100%;
+    padding-top: 28px;
+    margin-bottom: 29px;
+
+    @media (min-width: $md) {
+      padding-top: 21px;
+      margin-bottom: 12px;
+    }
 
     @media (min-width: $lg) {
       padding-right: 175px;
@@ -136,34 +165,53 @@
   }
 
   &--checkbox {
+    margin-bottom: 30px;
+
     @media (min-width: $md) {
       display: flex;
       flex-wrap: wrap;
+      padding-top: 22px;
+      /*margin-bottom: 0;*/
     }
   }
+
+  &--radio {
+    margin-bottom: 30px;
+    padding-top: 24px;
+
+    @media (min-width: $md) {
+      margin-bottom: 28px;
+      padding-top: 6px;
+    }
+  }
+}
+
+.form__item {
+  padding-bottom: 2px;
 
   &--radio {
     @media (min-width: $md) {
       margin-bottom: 28px;
     }
   }
-}
-
-.form__item {
-  padding-bottom: 22px;
 
   &--text {
     display: flex;
     flex-direction: column;
+    margin-bottom: 20px;
 
     @media (min-width: $md) {
       flex-direction: row;
+      margin-bottom: 37px;
     }
   }
 
   &--checkbox {
+    margin-bottom: 20px;
+
     @media (min-width: $md) {
       width: 50%;
+      margin-bottom: 27px;
     }
 
     @media (min-width: $lg) {
@@ -172,16 +220,19 @@
   }
 
   &--communication {
+    margin-bottom: 30px;
+
     @media (min-width: $md) {
       display: flex;
+      margin-bottom: 23px;
     }
   }
 }
 
 .form__label {
   display: block;
-  max-width: 140px;
-  padding-top: 12px;
+  max-width: 160px;
+  padding-top: 9px;
   padding-bottom: 12px;
   padding-left: 62px;
   position: relative;
@@ -195,6 +246,17 @@
 
   @media (min-width: $md) {
     max-width: 100%;
+    font-size: 19px;
+
+    &--radio {
+      padding-left: 82px;
+      padding-top: 16px;
+    }
+
+    &--checkbox {
+      padding-top: 16px;
+      padding-left: 80px;
+    }
   }
 
   &--text {
@@ -213,42 +275,18 @@
       position: absolute;
 
       left: 0;
-      top: 3px;
+      top: 0;
 
       width: 36px;
       height: 36px;
 
       border-radius: 50%;
       border: 2px solid $border-input-radio;
-    }
 
-    &:checked + label::after {
-      content: "";
-
-      position: absolute;
-
-      top: 15px;
-      left: 12px;
-
-      width: 16px;
-      height: 16px;
-      border-radius: 50%;
-      background-color: $bg-checked-radio;
-    }
-  }
-
-  &--checkbox {
-    & + label::before {
-      content: "";
-      position: absolute;
-
-      top: 0;
-      left: 2px;
-
-      width: 36px;
-      height: 36px;
-
-      border: 2px solid $bg-checked-checkbox;
+      @media (min-width: $md) {
+        width: 48px;
+        height: 48px;
+      }
     }
 
     &:checked + label::after {
@@ -259,6 +297,48 @@
       top: 12px;
       left: 12px;
 
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background-color: $bg-checked-radio;
+
+      @media (min-width: $md) {
+        width: 22px;
+        height: 22px;
+
+        left: 15px;
+        top: 15px;
+      }
+    }
+  }
+
+  &--checkbox {
+    & + label::before {
+      content: "";
+      position: absolute;
+
+      top: -1px;
+      left: 0;
+
+      width: 36px;
+      height: 36px;
+
+      border: 2px solid $bg-checked-checkbox;
+
+      @media (min-width: $md) {
+        width: 50px;
+        height: 48px;
+      }
+    }
+
+    &:checked + label::after {
+      content: "";
+
+      position: absolute;
+
+      top: 10px;
+      left: 9px;
+
       width: 20px;
       height: 9px;
 
@@ -266,6 +346,13 @@
       border-bottom: 2px solid $black;
 
       transform: rotate(-45deg);
+
+      @media (min-width: $md) {
+        top: 15px;
+        left: 13px;
+        width: 26px;
+        height: 13px;
+      }
     }
   }
 
@@ -273,6 +360,8 @@
     box-sizing: border-box;
     padding: 12px 0;
     width: 100%;
+    padding-top: 15px;
+    padding-bottom: 17px;
 
     outline: 0;
     font-size: 17px;
@@ -281,16 +370,29 @@
     border: 0;
     border-bottom: 2px solid $black;
 
+    @media (min-width: $md) {
+      padding-top: 0;
+      padding-bottom: 9px;
+      font-size: 19px;
+    }
+
     &::placeholder {
       font-size: 17px;
       line-height: 18px;
       color: $color-textaria-text;
+
+      @media (min-width: $md) {
+        font-size: 19px;
+        padding-left: 10px;
+      }
     }
   }
 
   &--communication {
     padding: 12px 0;
     width: 100%;
+    padding-top: 21px;
+    padding-bottom: 17px;
 
     border: 0;
     border-bottom: 2px solid $black;
@@ -304,9 +406,17 @@
       font-size: 17px;
       line-height: 18px;
       color: $color-textaria-communication;
+
+      @media (min-width: $md) {
+        padding-left: 18px;
+
+        font-size: 19px;
+      }
     }
 
     @media (min-width: $md) {
+      padding-top: 14px;
+
       background-color: $bg-input-communication;
     }
   }
@@ -327,12 +437,20 @@
   box-sizing: border-box;
   overflow: auto;
 
-  margin-top: 21px;
+  margin-top: 23px;
+
+  /*@media (min-width: $md) {
+    font-size: 19px;
+  }*/
 
   &::placeholder {
     font-size: 17px;
     line-height: 18px;
     color: $color-textaria-placeholder;
+
+    @media (min-width: $md) {
+      font-size: 19px;
+    }
   }
 }
 
@@ -357,6 +475,7 @@
     flex-direction: row;
     padding-left: 50px;
     padding-right: 50px;
+    margin-bottom: 50px;
   }
 
   @media (min-width: $lg) {
@@ -367,6 +486,8 @@
 
 .form__note {
   margin: 0 auto;
+  padding-right: 10px;
+  padding-top: 2px;
   margin-bottom: 30px;
 
   font-size: 14px;
@@ -379,6 +500,11 @@
     margin-right: 0;
     margin-bottom: auto;
     margin-top: auto;
+    padding-right: 2px;
+    padding-top: 0;
+
+    font-size: 17px;
+    line-height: 30px;
   }
 }
 
@@ -387,7 +513,7 @@
 
   width: 260px;
   padding-top: 16px;
-  padding-bottom: 16px;
+  padding-bottom: 15px;
   margin: 0 auto;
 
   @media (min-width: $md) {
