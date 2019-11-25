@@ -105,18 +105,22 @@
   @media (min-width: $md) {
     flex-basis: 50%;
     justify-content: flex-start;
+
+    font-size: 17px;
   }
 
   @media (min-width: $lg) {
     flex-basis: auto;
-
-    font-size: 17px;
   }
 }
 
 .contacts__name {
   display: block;
-  margin-right: 31px;
+  margin-right: 28px;
+
+  @media (min-width: $md) {
+    margin-right: 25px;
+  }
 
   @media (min-width: $lg) {
     margin-right: 20px;

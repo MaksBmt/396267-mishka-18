@@ -110,7 +110,7 @@
   color: $color-review;
 
   @media (min-width: $md) {
-    margin-bottom: 59px;
+    margin-bottom: 56px;
     padding-right: 25px;
 
     font-size: 17px;
@@ -118,8 +118,8 @@
   }
 
   @media (min-width: $lg) {
-    padding-right: 115px;
-    margin-bottom: 41px;
+    padding-right: 113px;
+    margin-bottom: 37px;
     padding-left: 3px;
   }
 }
@@ -142,6 +142,11 @@
   font-size: 17px;
   line-height: 20px;
   font-weight: 700;
+
+  @media (min-width: $md) {
+    font-size: 18px;
+    line-height: 24px;
+  }
 }
 
 .review__link {

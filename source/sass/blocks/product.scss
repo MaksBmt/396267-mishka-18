@@ -34,13 +34,14 @@
     display: flex;
     flex-wrap: wrap;
     width: 668px;
-    margin-bottom: 55px;
+    margin-bottom: 54px;
   }
 
   @media (min-width: $lg) {
     width: 316px;
     margin-left: 0;
     margin-right: 0;
+    margin-bottom: 56px;
   }
 }
 
@@ -91,9 +92,9 @@
     flex-basis: 49.8%;
   }
 
-  @media (min-width: $lg) {
-    max-height: 195px;
-  }
+  /*@media (min-width: $lg) {
+  max-height: 195px;
+}*/
 }
 
 .product__description-wrap {
@@ -155,6 +156,7 @@
 
   @media (min-width: $md) {
     font-size: 15px;
+    margin-bottom: 0;
   }
 }
 
