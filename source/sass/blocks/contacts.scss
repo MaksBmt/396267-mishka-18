@@ -105,18 +105,22 @@
   @media (min-width: $md) {
     flex-basis: 50%;
     justify-content: flex-start;
+
+    font-size: 17px;
   }
 
   @media (min-width: $lg) {
     flex-basis: auto;
-
-    font-size: 17px;
   }
 }
 
 .contacts__name {
   display: block;
-  margin-right: 31px;
+  margin-right: 28px;
+
+  @media (min-width: $md) {
+    margin-right: 25px;
+  }
 
   @media (min-width: $lg) {
     margin-right: 20px;
@@ -151,7 +155,11 @@
 }
 
 .contacts__map {
+  margin: 0 auto;
   margin-bottom: 40px;
+
+  position: relative;
+
   box-sizing: border-box;
 
   @media (min-width: $md) {
@@ -165,6 +173,25 @@
     margin-bottom: 0;
     width: 525px;
     height: 457px;
+  }
+}
+
+.contacts__img {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 322px;
+  height: 457px;
+
+  z-index: - 100;
+
+  @media (min-width: $md) {
+    width: 768px;
+  }
+
+  @media (min-width: $lg) {
+    width: 525px;
   }
 }
 
@@ -187,5 +214,7 @@
 
   @media (min-width: $lg) {
     margin-left: 0;
+
+    font-size: 17px;
   }
 }
