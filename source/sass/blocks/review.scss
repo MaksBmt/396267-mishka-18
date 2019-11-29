@@ -48,6 +48,10 @@
     background-position: left top;
     background-repeat: no-repeat;
     background-size: 350px 457px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/review@2x.jpg");
+    }
   }
 
   @media (min-width: $lg) {
