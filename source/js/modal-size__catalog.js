@@ -1,19 +1,12 @@
-var linkIndex = document.querySelector(".promo__button");
-/*var linkCatalog = document.querySelector(".video__button");*/
+var linkCatalog = document.querySelector(".video__button");
 var popup = document.querySelector(".modal-size");
 var overlay = document.querySelector(".modal-overlay");
 
-linkIndex.addEventListener("click", function (evt) {
+linkCatalog.addEventListener("click", function (evt) {
   evt.preventDefault();
   popup.classList.add("modal-show");
   overlay.classList.add("modal-show");
 });
-
-/*linkCatalog.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  popup.classList.add("modal-show");
-  overlay.classList.add("modal-show");
-});*/
 
 overlay.addEventListener("click", function (evt) {
   evt.preventDefault();
