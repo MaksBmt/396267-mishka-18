@@ -130,17 +130,31 @@
   background-color: $bg-video-content;
   background-repeat: no-repeat;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/video-mobile@2x.jpg");
+  }
+
   @media (min-width: $md) {
     order: 1;
     width: 668px;
     margin: 0 auto;
 
     background-size: 668px 462px;
+    background-image: url("../img/video-tablet@1x.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/video-tablet@2x.jpg");
+    }
   }
 
   @media (min-width: $lg) {
     width: 682px;
     background-size: 682px 455px;
+    background-image: url("../img/video-desktop@1x.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/video-desktop@2x.jpg");
+    }
   }
 }
 
