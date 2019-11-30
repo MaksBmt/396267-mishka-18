@@ -48,6 +48,10 @@
     background-position: left top;
     background-repeat: no-repeat;
     background-size: 350px 457px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/review@2x.jpg");
+    }
   }
 
   @media (min-width: $lg) {
@@ -95,8 +99,6 @@
 }
 
 .review__deskription {
-  /* display: flex;
- flex-direction: column;*/
   margin: 0;
 }
 
@@ -118,7 +120,7 @@
   }
 
   @media (min-width: $lg) {
-    padding-right: 112px;
+    padding-right: 100px;
     margin-bottom: 37px;
   }
 }

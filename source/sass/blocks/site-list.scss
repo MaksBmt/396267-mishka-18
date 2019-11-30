@@ -19,6 +19,18 @@
   border-bottom: 1px solid $border-header;
   box-sizing: border-box;
 
+  @media (min-width: $md) {
+
+    padding-top: 17px;
+    padding-bottom: 18px;
+    padding-left: 1px;
+
+    font-size: 15px;
+
+    border-bottom: 0;
+  }
+
+
   &[href] {
     &:hover {
       color: $hover-color-menu;
@@ -37,6 +49,30 @@
     padding: 0;
 
     border-bottom: 0;
+
+    @media (min-width: $md) {
+
+      width: 112px;
+      height: 46px;
+      padding-top: 22px;
+
+      img {
+        width: 112px;
+        height: 46px;
+      }
+    }
+
+    @media (min-width: $lg) {
+
+      width: 150px;
+      height: 75px;
+      padding-top: 8px;
+
+      img {
+        width: 150px;
+        height: 75px;
+      }
+    }
 
     &:hover {
       opacity: 0.6;
@@ -72,17 +108,6 @@
         fill: $activ-color-search;
       }
     }
-  }
-
-  @media (min-width: $md) {
-
-    padding-top: 17px;
-    padding-bottom: 18px;
-    padding-left: 1px;
-
-    font-size: 15px;
-
-    border-bottom: 0;
   }
 
   &--card {
@@ -130,7 +155,7 @@
 
       padding-top: 32px;
       padding-bottom: 32px;
-      padding-left: 38px;
+      padding-left: 36px;
 
       font-size: 17px;
 
@@ -250,7 +275,8 @@
     @media (min-width: $lg) {
 
       order: 2;
-      flex-basis: 39%;
+      /*flex-basis: 39%;*/
+      flex-basis: 30%;
     }
   }
 

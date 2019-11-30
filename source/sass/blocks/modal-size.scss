@@ -6,11 +6,12 @@
   left: 50%;
   top: 50%;
 
-  transform: translate(-50%, -50%);
+  transform: translateY(-50%);
 
   box-sizing: border-box;
   padding: 31px 30px 46px;
   width: 320px;
+  margin-left: -160px;
 
   border: 1px solid $border-modal;
   background-color: $white;
@@ -18,6 +19,7 @@
 
   @media (min-width: $md) {
     width: 568px;
+    margin-left: -284px;
   }
 }
 
