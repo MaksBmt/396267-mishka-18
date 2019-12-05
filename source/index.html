@@ -110,7 +110,7 @@
           </picture>
         </div>
         <p class="promo__price">Цена: 990 руб.</p>
-        <a class="button promo__button product__cart--modal">Заказать</a>
+        <a class="button promo__button product__cart--modal" data-value="вязанные корзинки">Заказать</a>
       </div>
     </div>
   </section>
@@ -237,7 +237,7 @@
   </footer>
   <section class="modal-size">
     <h2 class="modal-size__title">добавить в корзину</h2>
-    <form class="modal-size__form form" action="https://echo.htmlacademy.ru" method="post">
+    <form class="modal-size__form form" action="https://echo.htmlacademy.ru" method="post" name="choice">
       <fieldset class="form__fieldset form__fieldset--modal">
         <legend class="form__legend form__legend--modal">Выберете размер:</legend>
         <ul class="form__list form__list--modal">
@@ -255,7 +255,8 @@
           </li>
         </ul>
       </fieldset>
-      <button class="button form__button form__button--modal">добавить</button>
+      <input type="checkbox" value="имя карточки" name="zakaz" class="visually-hidden form__input form__input--name-zakaz" checked>
+      <button class="button form__button form__button--modal" type="submit">добавить</button>
     </form>
   </section>
   <div class="modal-overlay"></div>

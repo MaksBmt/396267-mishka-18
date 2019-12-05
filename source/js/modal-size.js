@@ -1,6 +1,12 @@
 var popup = document.querySelector(".modal-size");
 var overlay = document.querySelector(".modal-overlay");
 var list = document.querySelectorAll(".product__cart--modal");
+var id = 0;
+let inputZakaz = document.querySelector(".form__input--name-zakaz");
+let form = document.querySelector(".modal-size__form");
+
+let formSize = document.forms[0]; /*по идеи должно работать и именем формы, но нет - дает ошибку */
+let inputSize = formSize.elements.size;
 
 if (list) {
   for (var f = 0; f < list.length; f++) {
@@ -8,21 +14,33 @@ if (list) {
       evt.preventDefault();
       popup.classList.add("modal-show");
       overlay.classList.add("modal-show");
-    });
-    overlay.addEventListener("click", function (evt) {
-      evt.preventDefault();
-      popup.classList.remove("modal-show");
-      overlay.classList.remove("modal-show");
-    });
-
-    window.addEventListener("keydown", function (evt) {
-      if (evt.keyCode === 27) {
-        if (popup.classList.contains("modal-show")) {
-          evt.preventDefault();
-          popup.classList.remove("modal-show");
-          overlay.classList.remove("modal-show");
-        }
-      }
+      id = this.dataset.value;
+      inputZakaz.value = id;
+      console.log(inputZakaz.value);
     });
   }
+  overlay.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    popup.classList.remove("modal-show");
+    overlay.classList.remove("modal-show");
+  });
+
+  window.addEventListener("keydown", function (evt) {
+    if (evt.keyCode === 27) {
+      if (popup.classList.contains("modal-show")) {
+        evt.preventDefault();
+        popup.classList.remove("modal-show");
+        overlay.classList.remove("modal-show");
+      }
+    }
+  });
 }
+
+form.onsubmit = function (evt) {
+  console.log("форма отправлена");
+  evt.preventDefault();
+  popup.classList.remove("modal-show");
+  overlay.classList.remove("modal-show");
+  console.log(inputSize.value);
+  alert('Вы заказали товар: ' + inputZakaz.value + ' размером ' + inputSize.value);
+};
