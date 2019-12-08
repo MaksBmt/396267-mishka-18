@@ -33,7 +33,7 @@ gulp.task("css", function () {
 
 gulp.task("server", function () {
   server.init({
-    server: "source/"
+    server: "build/"
   });
 
   gulp.watch("source/sass/**/*.{scss,sass}", gulp.series("css"));
@@ -103,6 +103,8 @@ gulp.task("clean", function () {
 
 gulp.task("build", gulp.series(
   "clean",
+  "webp",
+  "images",
   "copy",
   "css",
   "sprite",
