@@ -49,6 +49,7 @@
     padding: 0;
 
     border-bottom: 0;
+    overflow: hidden;
 
     @media (min-width: $md) {
 
@@ -86,6 +87,7 @@
   &--search,
   &--card {
     position: relative;
+    overflow: hidden;
 
     svg {
       position: absolute;

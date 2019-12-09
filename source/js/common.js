@@ -7,6 +7,10 @@ let form = document.querySelector(".modal-size__form");
 var navTop = document.querySelector('.nav-menu');
 var navTopToggle = document.querySelector('.nav-menu__button');
 
+if (navTop) {
+  navTop.classList.remove('nav-menu--nojs');
+}
+
 if (navTopToggle) {
   navTopToggle.addEventListener('click', function () {
     if (navTop) {
