@@ -21,6 +21,7 @@
   display: block;
   margin: auto;
   cursor: pointer;
+  overflow: hidden;
 
   @media (min-width: $lg) {
     margin-top: 5px;
@@ -41,22 +42,17 @@
         fill: $active-footer-social;
       }
     }
-
-    /* background-image: url("../img/icon-insta.svg");
- background-size: 22px 22px;*/
   }
 
   &--facebook {
     width: 15px;
-    height: 18px;
+    height: 28px;
     margin-top: -6px;
 
     @media (min-width: $lg) {
       margin-top: 0;
     }
 
-    /*background-image: url("../img/icon-fb.svg");
-    background-size: 15px 18px;*/
     &:hover {
       svg {
         fill: $hover-footer-social;
@@ -75,8 +71,6 @@
     height: 21px;
     margin-right: 5px;
 
-    /*background-image: url("../img/icon-twitter.svg");
-    background-size: 24px 21px;*/
     &:hover {
       svg {
         fill: $hover-footer-social;

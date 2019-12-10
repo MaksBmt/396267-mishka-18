@@ -19,10 +19,6 @@
     padding-right: 50px;
     /*min-height: 144px;*/
   }
-
-  /* @media (min-width: $lg) {
-   padding-bottom: 52px;
- }*/
 }
 
 .footer__logo-link {
@@ -31,6 +27,7 @@
   @media (min-width: $md) {
     display: block;
     margin-right: calc(50vw - 282px);
+    overflow: hidden;
 
     svg {
       height: 35px;
@@ -120,6 +117,7 @@
   justify-content: center;
   align-items: center;
   color: $black;
+  overflow: hidden;
 }
 
 .footer__copyright-text {

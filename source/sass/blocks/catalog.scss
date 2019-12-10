@@ -49,15 +49,18 @@
 }
 
 .catalog__list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
   padding-left: 30px;
   padding-right: 30px;
   margin: 0;
   list-style: none;
 
   background-color: $white;
+
+  @media (min-width: 640px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 
   @media (min-width: $md) {
     padding-left: 50px;
