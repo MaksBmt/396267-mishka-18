@@ -50,7 +50,7 @@
             <a class="site-list__link site-list__link--sale" href="#">Распродажа</a>
           </li>
           <li class="site-list__item site-list__item--delivery">
-            <a class="site-list__link" href="#">Бесплатная доставка по России</a>
+            <a class="site-list__link site-list__link--delivery" href="#">Бесплатная доставка по России</a>
           </li>
         </ul>
       </nav>
@@ -138,10 +138,16 @@
               <li class="form__item form__item--communication">
                 <label class="form__legend form__legend--communication" for="phone">тел</label>
                 <input class="form__input form__input--communication" type="tel" name="phone" id="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
+                <svg class="form__img form__img--phone" width="25" height="24">
+                  <use xlink:href="img/sprite.svg#icon-phone"></use>
+                </svg>
               </li>
               <li class="form__item form__item--communication">
                 <label class="form__legend form__legend--communication form__legend--email" for="email">e-mail</label>
                 <input class="form__input form__input--communication" type="text" name="email" id="email" placeholder="Ваш Email*">
+                <svg class="form__img form__img--email" width="32" height="32">
+                  <use xlink:href="img/sprite.svg#icon-mail"></use>
+                </svg>
               </li>
             </ul>
           </div>
