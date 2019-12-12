@@ -182,10 +182,6 @@
   &--delivery {
     color: $color-delivery;
   }
-
-  @media (min-width: $lg) {
-    /*padding-top: 16px;*/
-  }
 }
 
 .site-list__item {
@@ -281,7 +277,6 @@
     @media (min-width: $lg) {
 
       order: 2;
-      /*flex-basis: 39%;*/
       flex-basis: 30%;
     }
   }
