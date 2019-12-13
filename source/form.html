@@ -8,6 +8,8 @@
   <script src="js/picturefill.js"></script>
   <script src="js/svgxuse.js"></script>
   <meta name="viewport" content="initial-scale=1.0, width=device-width">
+  <link rel="preload" href="fonts/opensans.woff2" as="font">
+  <link rel="preload" href="fonts/opensansbold.woff2" as="font">
 </head>
 
 <body>
@@ -19,7 +21,7 @@
         </button>
         <ul class="nav-menu__list site-list">
           <li class="site-list__item site-list__item--logo site-list__item--activ">
-            <a class="site-list__link site-list__link--logo" href="index.html">
+            <a class="site-list__link site-list__link--logo" href="index.html" aria-label="Мишка">
               <picture>
                 <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
                 <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
@@ -48,7 +50,7 @@
             <a class="site-list__link site-list__link--sale" href="#">Распродажа</a>
           </li>
           <li class="site-list__item site-list__item--delivery">
-            <a class="site-list__link" href="#">Бесплатная доставка по России</a>
+            <a class="site-list__link site-list__link--delivery" href="#">Бесплатная доставка по России</a>
           </li>
         </ul>
       </nav>
@@ -136,10 +138,16 @@
               <li class="form__item form__item--communication">
                 <label class="form__legend form__legend--communication" for="phone">тел</label>
                 <input class="form__input form__input--communication" type="tel" name="phone" id="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
+                <svg class="form__img form__img--phone" width="25" height="24">
+                  <use xlink:href="img/sprite.svg#icon-phone"></use>
+                </svg>
               </li>
               <li class="form__item form__item--communication">
                 <label class="form__legend form__legend--communication form__legend--email" for="email">e-mail</label>
                 <input class="form__input form__input--communication" type="text" name="email" id="email" placeholder="Ваш Email*">
+                <svg class="form__img form__img--email" width="32" height="32">
+                  <use xlink:href="img/sprite.svg#icon-mail"></use>
+                </svg>
               </li>
             </ul>
           </div>
@@ -163,28 +171,28 @@
   </main>
   <footer class="footer">
     <div class="footer__wrap wrap">
-      <a class="footer__logo-link" href="index.html">
+      <a class="footer__logo-link" href="index.html" aria-label="Мишка">
         <svg width="102" height="35">
           <use xlink:href="img/sprite.svg#icon-logo-footer"></use>
         </svg>
       </a>
       <ul class="footer__social social-list">
         <li class="social-list__item">
-          <a class="social-list__link social-list__link--instagram" href="https://www.instagram.com/">
+          <a class="social-list__link social-list__link--instagram" href="https://www.instagram.com/" aria-label="Instagram">
             <svg width="21.8" height="21.3">
               <use xlink:href="img/sprite.svg#icon-insta"></use>
             </svg>
           </a>
         </li>
         <li class="social-list__item">
-          <a class="social-list__link social-list__link--facebook" href="https://www.facebook.com/">
+          <a class="social-list__link social-list__link--facebook" href="https://www.facebook.com/" aria-label="Facebook">
             <svg width="15" height="27.7">
               <use xlink:href="img/sprite.svg#icon-fb"></use>
             </svg>
           </a>
         </li>
         <li class="social-list__item">
-          <a class="social-list__link social-list__link--twitter" href="https://twitter.com/">
+          <a class="social-list__link social-list__link--twitter" href="https://twitter.com/" aria-label="Twitter">
             <svg width="23.5" height="20.2">
               <use xlink:href="img/sprite.svg#icon-twitter"></use>
             </svg>
@@ -192,7 +200,7 @@
         </li>
       </ul>
       <div class="footer__copyright">
-        <a class="footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
+        <a class="footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="HTML Academy">
           <span class="footer__copyright-text">Разработано</span>
           <svg width="26.9" height="34">
             <use xlink:href="img/sprite.svg#icon-logo-htmlacademy"></use>

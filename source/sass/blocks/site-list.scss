@@ -179,8 +179,8 @@
     }
   }
 
-  @media (min-width: $lg) {
-    /*padding-top: 16px;*/
+  &--delivery {
+    color: $color-delivery;
   }
 }
 
@@ -195,7 +195,9 @@
 
   &--logo {
     display: flex;
-    padding: 22px 0;
+    padding: 0;
+    padding-top: 22px;
+    padding-bottom: 16px;
 
     border-bottom: 1px solid $border-header;
 
@@ -275,7 +277,6 @@
     @media (min-width: $lg) {
 
       order: 2;
-      /*flex-basis: 39%;*/
       flex-basis: 30%;
     }
   }

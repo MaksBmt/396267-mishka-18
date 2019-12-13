@@ -40,4 +40,9 @@
     background-color: $bg-button-hover;
     color: $white;
   }
+
+  &:active {
+    background-color: $bg-button-active;
+    color: $active-button-color;
+  }
 }

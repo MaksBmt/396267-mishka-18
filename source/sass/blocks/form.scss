@@ -134,6 +134,7 @@
 
     @media (min-width: $lg) {
       padding-right: 52px;
+      margin-top: 17px;
     }
   }
 
@@ -296,6 +297,7 @@
   }
 
   &--communication {
+    position: relative;
     margin-bottom: 30px;
 
     @media (min-width: $md) {
@@ -519,8 +521,6 @@
 
   &--communication {
     width: 100%;
-    /* padding-top: 21px;
-    padding-bottom: 17px;*/
     height: 54px;
 
     border: 0;
@@ -548,11 +548,16 @@
 
       background-color: $bg-input-communication;
     }
-  }
 
-  &:hover,
-  &:focus {
-    border-color: $hover-border-input;
+    &:hover,
+    &:focus {
+      border-color: $hover-border-input;
+
+      + .form__img {
+        fill: $hover-img-communication;
+        opacity: 1;
+      }
+    }
   }
 
   &--modal {
@@ -564,6 +569,44 @@
   /*&--error {
   border-color: red;
 }*/
+}
+
+.form__img {
+  position: absolute;
+  opacity: 0.2;
+  top: 33px;
+
+  @media (min-width: $md) {
+    top: 10px;
+  }
+
+  &--phone {
+    width: 25px;
+    height: 24px;
+    right: 8px;
+
+    @media (min-width: $md) {
+      right: 25px;
+    }
+
+    @media (min-width: $lg) {
+      right: 9px;
+    }
+  }
+
+  &--email {
+    width: 32px;
+    height: 32px;
+    right: 5px;
+
+    @media (min-width: $md) {
+      right: 22px;
+    }
+
+    @media (min-width: $lg) {
+      right: 4px;
+    }
+  }
 }
 
 .form__input-textaria {
