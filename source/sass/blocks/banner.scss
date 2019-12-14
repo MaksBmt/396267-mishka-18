@@ -185,11 +185,10 @@
 
     @media (min-width: $md) {
       &:hover {
-        .banner__link--interior {
-          background-color: $hover-bg-interior;
-        }
+        background-color: $hover-bg-interior;
 
         .banner__item--interior {
+          background-color: $hover-bg-interior;
           transform: translateY(-5px);
 
           &::after {
@@ -198,13 +197,11 @@
         }
       }
 
-
       &:active {
-        .banner__link--interior {
-          background-color: $active-bg-interior;
-        }
+        background-color: $active-bg-interior;
 
         .banner__item--interior {
+          background-color: $active-bg-interior;
           transform: translateY(-5px);
 
           &::after {
@@ -224,11 +221,10 @@
 
     @media (min-width: $md) {
       &:hover {
-        .banner__link--toys {
-          background-color: $hover-bg-toys;
-        }
+        background-color: $hover-bg-toys;
 
         .banner__item--toys {
+          background-color: $hover-bg-toys;
           transform: translateY(-5px);
 
           &::after {
@@ -238,11 +234,11 @@
       }
 
       &:active {
-        .banner__link--toys {
-          background-color: $active-bg-toys;
-        }
+        background-color: $active-bg-toys;
+
 
         .banner__item--toys {
+          background-color: $active-bg-toys;
           transform: translateY(-5px);
 
           &::after {

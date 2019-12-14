@@ -17,7 +17,6 @@
     padding-bottom: 54px;
     padding-left: 50px;
     padding-right: 50px;
-    /*min-height: 144px;*/
   }
 }
 
@@ -27,7 +26,6 @@
   @media (min-width: $md) {
     display: block;
     margin-right: calc(50vw - 282px);
-    overflow: hidden;
 
     svg {
       height: 35px;
@@ -56,6 +54,7 @@
 
 .footer__social {
   margin: 0 auto;
+  margin-right: -42px;
   padding-bottom: 27px;
   min-width: 260px;
 
@@ -117,7 +116,6 @@
   justify-content: center;
   align-items: center;
   color: $black;
-  overflow: hidden;
 }
 
 .footer__copyright-text {

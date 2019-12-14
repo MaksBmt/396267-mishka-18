@@ -181,6 +181,7 @@
 
   &--delivery {
     color: $color-delivery;
+    font-weight: 400;
   }
 }
 
@@ -230,10 +231,6 @@
       flex-grow: 1;
       justify-content: flex-end;
       padding-right: 50px;
-
-      a {
-        font-weight: 400;
-      }
     }
 
     @media (min-width: $lg) {

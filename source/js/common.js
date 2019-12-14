@@ -1,6 +1,6 @@
 var popup = document.querySelector(".modal-size");
 var overlay = document.querySelector(".modal-overlay");
-var list = document.querySelectorAll(".product__cart--modal");
+var list = document.querySelectorAll(".modal-click");
 var id = 0;
 let inputZakaz = document.querySelector(".form__input--name-zakaz");
 let form = document.querySelector(".modal-size__form");

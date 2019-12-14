@@ -68,8 +68,8 @@
   }
 
   @media (min-width: $lg) {
-    display: flex;
-
     flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-right: -48px;
   }
 }
