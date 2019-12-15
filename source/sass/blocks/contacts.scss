@@ -198,7 +198,8 @@
   overflow: hidden;
 
   top: 0;
-  left: 0;
+  left: 50%;
+  transform: translateX(-50%);
 
   width: 320px;
   height: 457px;
@@ -211,6 +212,8 @@
 
   @media (min-width: $lg) {
     width: 525px;
+    left: auto;
+    right: -300px;
   }
 }
 
