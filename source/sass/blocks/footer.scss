@@ -3,7 +3,7 @@
 }
 
 .footer__wrap {
-  padding-top: 30px;
+  padding-top: 24px;
   padding-left: 30px;
   padding-right: 30px;
   padding-bottom: 24px;
@@ -52,10 +52,9 @@
   }
 }
 
-.footer__social {
+.footer__social-wrap {
   margin: 0 auto;
-  margin-right: -42px;
-  padding-bottom: 27px;
+  padding-bottom: 23px;
   min-width: 260px;
 
   border-bottom: 1px solid $border-footer;
@@ -77,15 +76,15 @@
   margin: 0 auto;
   padding-top: 20px;
 
+  @media (min-width: $lg) {
+    margin-top: 6px;
+  }
+
   svg {
     fill: $color-footer-copyright;
 
     transition-property: all;
     transition-duration: 400ms;
-
-    @media (min-width: $lg) {
-      margin-top: 6px;
-    }
   }
 
   &:hover {
