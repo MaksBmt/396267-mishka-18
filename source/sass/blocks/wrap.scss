@@ -1,0 +1,9 @@
+.wrap {
+  @include min-max(320px, 1150px, 0);
+}
+
+.wrap__catalog {
+  @media (min-width: $lg) {
+    padding: 0 50px;
+  }
+}
