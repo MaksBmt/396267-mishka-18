@@ -429,6 +429,11 @@
         top: 15px;
       }
     }
+
+    &:focus + label::before {
+      //outline: thin dotted;
+      border-color: $hover-border-input;
+    }
   }
 
   &--checkbox {
@@ -475,6 +480,11 @@
         width: 26px;
         height: 13px;
       }
+    }
+
+    &:focus + label::before {
+      //outline: thin dotted;
+      border-color: $hover-border-input;
     }
   }
 
@@ -562,6 +572,10 @@
   &--modal {
     &:checked + label {
       border-color: $active-input-modal;
+    }
+
+    &:focus + label {
+      outline: thin dotted;
     }
   }
 }
